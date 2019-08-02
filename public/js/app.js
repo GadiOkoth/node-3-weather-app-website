@@ -19,7 +19,8 @@ weatherForm.addEventListener('submit',(e)=>{
             messageOne.textContent=data.error;
         }else{
             messageOne.textContent=data.location;
-            messageTwo.textContent=data.forecast.placename + ', Temperature is '+data.forecast.temperature+' Degrees';
+            messageTwo.textContent=data.forecast.placename + ' Temperature is '+data.forecast.temperature+' Degrees.'+ 
+            'There is '+data.forecast.rainchance+'% chance of rain. Humidity is '+data.forecast.humidity;
         }
     })
 });
